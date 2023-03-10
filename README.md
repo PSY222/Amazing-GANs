@@ -5,6 +5,8 @@ Informative codes and research paper sources about GANs! I am always open for PR
 |Title|Research Paper|Code|dataset|
 |-----|--------------|----|--------|
 |DCGAN|[source](http://imlab.postech.ac.kr/dkim/class/csed514_2019s/DeepLearningBook.pdf)|[code](https://github.com/PSY222/Amazing-GANs/tree/main/DCGAN)|FashionMNIST|
+|StyleGAN|[source](https://arxiv.org/abs/1812.04948)|noise data|
+
 
 <hr>
 
