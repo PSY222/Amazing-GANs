@@ -17,7 +17,6 @@ Informative codes and research paper sources about GANs.
 =======
 #### Evaluation Metrics
 |Title|Research Paper|Code|Dataset|
->>>>>>> 9afed684568ed12abb3f021c2b060c6809bbf62c
 |-----|--------------|----|--------|
 |FID|[source](https://arxiv.org/pdf/1706.08500.pdf)|[code](https://github.com/PSY222/Amazing-GANs/tree/main/Evaluation_of_GANs)|CelebA|
 
