@@ -9,12 +9,8 @@ Informative codes and research paper sources about GANs.
 |StyleGAN|[source](https://arxiv.org/abs/1812.04948)|noise data|
 |WGAN-GP|[source](https://arxiv.org/pdf/1704.00028.pdf)|MNIST|
 
-
-<<<<<<< HEAD
 <hr>
-### Evaluation Metrics
-|Title|Research Paper|Code|dataset|
-=======
+
 #### Evaluation Metrics
 |Title|Research Paper|Code|Dataset|
 |-----|--------------|----|--------|
