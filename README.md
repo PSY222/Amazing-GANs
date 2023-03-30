@@ -8,6 +8,8 @@ Informative codes and research paper sources about GANs.
 |DCGAN|[source](http://imlab.postech.ac.kr/dkim/class/csed514_2019s/DeepLearningBook.pdf)|[code](https://github.com/PSY222/Amazing-GANs/tree/main/DCGAN)|FashionMNIST|
 |StyleGAN|[source](https://arxiv.org/abs/1812.04948)|noise data|
 |WGAN-GP|[source](https://arxiv.org/pdf/1704.00028.pdf)|MNIST|
+|SRGAN|[source](https://arxiv.org/abs/1609.04802)|STL10|
+
 
 <hr>
 
@@ -21,3 +23,9 @@ Informative codes and research paper sources about GANs.
 |Title|Research Paper|Code|Dataset|
 |-----|--------------|----|--------|
 |TBD|[TBD]()|TBD|
+
+#### 🙌 References
+DeepLearning.AI GANs Specialization Course materials
+
+<hr>
+🚩This repository is managed for a personal study purpose
