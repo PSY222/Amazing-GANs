@@ -24,6 +24,10 @@ Informative codes and research paper sources about GANs.
 |-----|--------------|----|--------|
 |TBD|[TBD]()|TBD|
 
+#### Useful GANs Hacks Repo
+[How tot Train GAN? Tips and tricks](https://github.com/soumith/ganhacks)
+
+
 #### 🙌 References
 DeepLearning.AI GANs Specialization Course materials
 

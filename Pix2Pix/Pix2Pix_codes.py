@@ -165,7 +165,7 @@ class Discriminator(nn.Module):
 
 #Training Preparation
 adv_criterion = nn.BCEWithLogitsLoss()
-recon_criterin = nn.L1Loss()
+recon_criterion = nn.L1Loss()
 lambda_recon = 200
 
 n_epochs = 20
@@ -218,22 +218,23 @@ def get_gen_loss(gen,disc, real, condition, adv_criterion, recon_criterion, lamb
 def train(save_model=False):
     mean_generator_loss = 0
     mean_discriminator_loss = 0
-    dataloader = DataLoader(dataset,batch_size=batch_size,shuffle=True)
+    dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
     cur_step = 0
 
     for epoch in range(n_epochs):
-        for image,_ in tqdm(dataloader):
+        # Dataloader returns the batches
+        for image, _ in tqdm(dataloader):
             image_width = image.shape[3]
-            condition = image[:,:,:,image_width//2]
-            condition = nn.functional.interpolate(condition,size=target_shape)
+            condition = image[:, :, :, :image_width // 2]
+            condition = nn.functional.interpolate(condition, size=target_shape)
             real = image[:, :, :, image_width // 2:]
             real = nn.functional.interpolate(real, size=target_shape)
             cur_batch_size = len(condition)
             condition = condition.to(device)
             real = real.to(device)
 
-            #update discriminator
-            disc_opt.zero_grad()
+            ### Update discriminator ###
+            disc_opt.zero_grad() # Zero out the gradient before backpropagation
             with torch.no_grad():
                 fake = gen(condition)
             disc_fake_hat = disc(fake.detach(), condition) # Detach generator

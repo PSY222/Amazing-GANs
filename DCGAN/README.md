@@ -25,6 +25,8 @@
  [Unspuervised Representation Learning with Deep Convolutional Generative Adversarial Networks(2016)](https://arxiv.org/pdf/1511.06434.pdf)
  [Pytorch DCGAN Tutorial](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
 
- <br> Checkout the results of the [DCGAN code using FashionMNIST data] (https://www.kaggle.com/code/bell2psy/dcgan-with-fashionmnist-comparison)
+ <br> 
+ 
+ Checkout the results of the [DCGAN code using FashionMNIST data](https://www.kaggle.com/code/bell2psy/dcgan-with-fashionmnist-comparison)
 
  
