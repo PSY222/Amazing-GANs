@@ -114,23 +114,9 @@ class MicroStyleGANGenerator(nn.Module):
         self.alpha = 0.2
 
     def upsample_to_match_size(self, smaller_image, bigger_image):
-        '''
-        Function for upsampling an image to the size of another: Given a two images (smaller and bigger), 
-        upsamples the first to have the same dimensions as the second.
-        Parameters:
-            smaller_image: the smaller image to upsample
-            bigger_image: the bigger image whose dimensions will be upsampled to
-        '''
         return F.interpolate(smaller_image, size=bigger_image.shape[-2:], mode='bilinear')
 
     def forward(self, noise, return_intermediate=False):
-        '''
-        Function for completing a forward pass of MicroStyleGANGenerator: Given noise, 
-        computes a StyleGAN iteration.
-        Parameters:
-            noise: a noise tensor with dimensions (n_samples, z_dim)
-            return_intermediate: a boolean, true to return the images as well (for testing) and false otherwise
-        '''
         x = self.starting_constant
         w = self.map(noise)
         x = self.block0(x, w)
