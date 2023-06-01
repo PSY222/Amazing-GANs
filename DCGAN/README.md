@@ -9,7 +9,7 @@
 
 ###### (D stands for discriminator, G stands for generator in this document)
 
-##### <ins>DCGAN Guidelines </ins>
+#### <ins>DCGAN Guidelines </ins>
 * Replace pooling layers with **strided convolution(D)** and **fractional-strided convolutions(G)**
 *(Fractional-strided convolution shouldn't be confused as 'deconvolution')*
 * Use **batchnorm** in both D and G
