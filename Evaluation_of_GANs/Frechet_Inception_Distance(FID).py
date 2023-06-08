@@ -83,7 +83,6 @@ def matrix_sqrt(x):
     y = scipy.linalg.sqrtm(y)
     return torch.Tensor(y.real, device=x.device)
 
-
 def frechet_distance(mu_x, mu_y, sigma_x, sigma_y):
     return  (mu_x - mu_y).dot(mu_x - mu_y) + torch.trace(sigma_x) + torch.trace(sigma_y) - 2*torch.trace(matrix_sqrt(sigma_x @ sigma_y)) 
 
@@ -91,7 +90,6 @@ def preprocess(img):
     img = torch.nn.functional.interpolate(img, size=(299, 299), mode='bilinear', align_corners=False)
     return img
 
-import numpy as np
 def get_covariance(features):
     return torch.Tensor(np.cov(features.detach().numpy(), rowvar=False))
 
