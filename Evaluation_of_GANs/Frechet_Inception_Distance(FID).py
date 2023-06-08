@@ -57,7 +57,6 @@ transform = transforms.Compose([
 
 in_coursera = False # Set this to false if you're running this outside Coursera
 if in_coursera:
-    import numpy as np
     data = torch.Tensor(np.load('fid_images_tensor.npz', allow_pickle=True)['arr_0'])
     dataset = torch.utils.data.TensorDataset(data, data)
 else:
