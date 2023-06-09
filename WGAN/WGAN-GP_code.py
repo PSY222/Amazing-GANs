@@ -103,6 +103,7 @@ def weights_init(m):
     if isinstance(m, nn.BatchNorm2d):
         torch.nn.init.normal_(m.weight, 0.0, 0.02)
         torch.nn.init.constant_(m.bias, 0)
+        
 gen = gen.apply(weights_init)
 crit = crit.apply(weights_init)
 
